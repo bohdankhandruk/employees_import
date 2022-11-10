@@ -1,0 +1,20 @@
+add employee entities:
+  title: 'Create new Employee entities'
+
+administer employee entities:
+  title: 'Administer Employee entities'
+  description: 'Allow to access the administration form to configure Employee entities.'
+  restrict access: true
+
+delete employee entities:
+  title: 'Delete Employee entities'
+
+edit employee entities:
+  title: 'Edit Employee entities'
+
+view published employee entities:
+  title: 'View published Employee entities'
+
+view unpublished employee entities:
+  title: 'View unpublished Employee entities'
+

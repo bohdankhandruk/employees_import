@@ -1,0 +1,6 @@
+name: 'BKH Employee'
+type: module
+description: 'BKH Employee'
+core_version_requirement: ^8.7.7 || ^9
+package: 'BKH'
+

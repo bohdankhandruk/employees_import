@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains bkh_employee.install.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function bkh_employee_uninstall($is_syncing) {
+  $file_system = \Drupal::service('file_system');
+
+  // Reseting csvs for import.
+  \Drupal::service('tempstore.private')->get('bkh_employee')->delete('csvs');
+
+  // Deleting csvs.
+  $dest_dir = $file_system->getTempDirectory() . '/employees';
+  if ($file_system->prepareDirectory($dest_dir)) {
+    $file_system->deleteRecursive($dest_dir);
+  }
+}

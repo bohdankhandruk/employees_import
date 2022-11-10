@@ -1,0 +1,47 @@
+bkh_employee.employee_form:
+  path: '/bkh_employee/form/employee'
+  defaults:
+    _form: '\Drupal\bkh_employee\Form\EmployeeForm'
+    _title: 'Collect Employee Data'
+  requirements:
+    _access: 'TRUE'
+
+bkh_employee.employee_import_form:
+  path: '/bkh_employee/form/employee/import'
+  defaults:
+    _form: '\Drupal\bkh_employee\Form\EmployeeImportForm'
+    _title: 'Import Employee Data'
+  requirements:
+    _access: 'TRUE'
+
+bkh_employee.csv_list_form:
+  path: '/bkh_employee/form/employee/csv-list'
+  defaults:
+    _form: '\Drupal\bkh_employee\Form\CsvListForm'
+    _title: 'CSV List'
+  requirements:
+    _access: 'TRUE'
+
+bkh_employee.employee_import_controller_csv_saved:
+  path: '/bkh_employee/csv-saved'
+  defaults:
+    _controller: '\Drupal\bkh_employee\Controller\EmployeeImportController::csvSaved'
+    _title: 'CSV Saved'
+  requirements:
+    _permission: 'access content'
+
+bkh_employee.employee_import_controller_csv_imported:
+  path: '/bkh_employee/csv-imported'
+  defaults:
+    _controller: '\Drupal\bkh_employee\Controller\EmployeeImportController::csvImported'
+    _title: 'CSV Imported'
+  requirements:
+    _permission: 'access content'
+
+bkh_employee.employee_import_controller_csv_empty_import:
+  path: '/bkh_employee/csv_empty_import'
+  defaults:
+    _controller: '\Drupal\bkh_employee\Controller\EmployeeImportController::csvEmptyImport'
+    _title: 'CSV Empty Import'
+  requirements:
+    _permission: 'access content'

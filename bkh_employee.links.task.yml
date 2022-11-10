@@ -1,0 +1,9 @@
+bkh_employee.employee_form:
+  route_name: bkh_employee.employee_form
+  base_route: bkh_employee.employee_form
+  title: 'Collect Employee Data'
+
+bkh_employee.employee_import_form:
+  route_name: bkh_employee.employee_import_form
+  base_route: bkh_employee.employee_form
+  title: 'Import Employee Data'

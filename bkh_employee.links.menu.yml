@@ -1,0 +1,6 @@
+bkh_employee.employee_form:
+  title: 'Collect Employee Data'
+  route_name: bkh_employee.employee_form
+  description: 'Collect Employee Data'
+  parent: system.admin_config
+  weight: 100
